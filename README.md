@@ -1,12 +1,53 @@
-# React + Vite
+# ⚡ CI/CD with Docker (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **demo project** built with **React + Vite** to practice **Docker-based CI/CD pipeline setup**.  
+The app itself is minimal — the focus is on **containerization and deployment automation**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React 19** – Frontend library  
+- ⚡ **Vite 7** – Build tool  
+- 🎨 **Tailwind CSS 4** – Styling  
+- 🎞️ **Framer Motion** – Animations  
+- 🐳 **Docker** – Containerization  
+- 📦 **Nginx** – Serving production build  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Setup
+
+### Clone the Repository
+```bash
+git clone https://github.com/VansitaGajjar/CI_CD_with_Docker.git
+cd CI_CD_with_Docker
+npm install
+npm run dev
+```
+The app will be available at: http://localhost:5173/
+
+---
+
+## 🐳 Docker Setup
+
+Build Docker Image
+```bash
+docker build -t ci-cd-with-docker .
+```
+
+Run Docker Container
+```bash
+docker run -p 8080:80 ci-cd-with-docker
+```
+Now, open http://localhost:8080/ in your browser 🚀
+
+---
+
+## ⚡ CI/CD Goal
+- This project is meant to demonstrate end-to-end CI/CD with:
+  - ✅ Dockerized React app
+  - ✅ Automated builds & tests (via GitHub Actions or any CI/CD tool)
+  - ✅ Deployment with Nginx
+ 
+  
