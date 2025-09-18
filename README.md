@@ -31,12 +31,12 @@ The app will be available at: http://localhost:5173/
 
 ## 🐳 Docker Setup
 
-Build Docker Image
+### Build Docker Image
 ```bash
 docker build -t ci-cd-with-docker .
 ```
 
-Run Docker Container
+### Run Docker Container
 ```bash
 docker run -p 8080:80 ci-cd-with-docker
 ```
